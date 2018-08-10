@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-light" style="background-color: #ffd1f7;">
       <a class="navbar-brand nav-link disabled" href="#">Store App</a>     
           <a class="nav-item nav-link active" href="/#">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="/products">Products</a>

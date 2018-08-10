@@ -6,19 +6,31 @@ const customers = [
   {id: 5, firstName:"Rera", lastName:"Reric", email:"rreric@mail.com"},
 ]
 
+let id = 5;
+
 class CustomerService {
     list(){
       return customers;
     }
 
     remove(customer){
-      let indexOfCustomer = this.customers.indexOf(customer);
-      this.customers.splice(indexOfCustomer, 1);
+      let indexOfCustomer = customers.indexOf(customer);
+      customers.splice(indexOfCustomer, 1);
     }
+
+    add(newCustomer){
+      id++;
+      newCustomer.id = id;
+      console.log(newCustomer.id);          
+      customers.push(newCustomer);
+    }
+
+    
   }
 
 
 export const customerService = new CustomerService;
+export const kupci = customers;
 /// ako je fajl sa samo jednom funkciom onda pisem export default funkcija(){ return ....}
 
 ///// tamo gde hocu da koristim: import { customerService } from '../sevices/CustomerSevice.js'
